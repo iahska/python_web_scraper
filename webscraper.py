@@ -9,3 +9,11 @@ url="https://www.imdb.com/search/title/?groups=top_1000&ref_=adv_prv"
 results=requests.get(url,headers=headers)
 soup = BeautifulSoup(results.text, "html.parser")
 print(soup.prettify())
+
+titles=[]
+years=[]
+time=[]
+imdb_ratings=[]
+metascores=[]
+votes=[]
+us_gross=[]
